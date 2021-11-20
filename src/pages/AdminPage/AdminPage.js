@@ -42,8 +42,8 @@ export const TableLocal = () => {
 
   const HandleApiSubmit = (e) => {
     let session_url = `https://urlshortener.smef.io/urls?orderBy=createdAt&orderDir=desc&limit=25`;
-    const username = 'abat';
-    const password = '5hWDEcFK4FUW';
+    const username = 'CHANGE IT TO THE KNOWN USERNAME';
+    const password = 'CHANGE IT TO THE KNOWN PASSWORD ';
     let basicAuth = 'Basic ' + window.btoa(username + ':' + password);
     axios.get(session_url, {}, {
            headers: { 
@@ -70,8 +70,8 @@ export const TableLocal = () => {
 
   const deleteRow = (id) => {
     let session_url = `https://urlshortener.smef.io/urls/${id}`;
-    const username = 'abat';
-    const password = '5hWDEcFK4FUW';
+    const username = 'CHANGE IT TO THE KNOWN USERNAME';
+    const password = 'CHANGE IT TO THE KNOWN PASSWORD ';
     let basicAuth = 'Basic ' + window.btoa(username + ':' + password);
     axios.delete(session_url, {}, {
           headers: { 
@@ -92,8 +92,8 @@ export const TableLocal = () => {
 
     const editLink = (id) => {
     let session_url = `https://urlshortener.smef.io/urls/${id}`;
-    const username = 'abat';
-    const password = '5hWDEcFK4FUW';
+    const username = 'CHANGE IT TO THE KNOWN USERNAME';
+    const password = 'CHANGE IT TO THE KNOWN PASSWORD ';
     let basicAuth = 'Basic ' + window.btoa(username + ':' + password);
     axios.put(session_url, {}, {
           headers: { 
