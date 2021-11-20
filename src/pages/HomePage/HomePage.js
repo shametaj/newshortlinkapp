@@ -34,8 +34,8 @@ export const Input = () => {
 
   const HandleApiSubmit = (e) => {
     const session_url = 'https://urlshortener.smef.io/urls';
-    const username = 'abat';
-    const password = '5hWDEcFK4FUW';
+    const username = 'CHANGE IT TO THE KNOWN USERNAME';
+    const password = 'CHANGE IT TO THE KNOWN PASSWORD ';
     let basicAuth = 'Basic ' + window.btoa(username + ':' + password);
     axios.post(session_url, { inputValue: inputValue }, {
            headers: { 
