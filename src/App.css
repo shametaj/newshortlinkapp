@@ -1,0 +1,149 @@
+header {
+  z-index: 1 !important;
+}
+.input-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  flex: 1;
+}
+.close_icon {
+  display: none;
+}
+.flex-outer {
+  display: flex;
+  flex-direction: row !important;
+}
+.flex-outer aside {
+  height: 100vh;
+  background-color: #fff;
+  width: 0px;
+  border-right: 1px solid #ddd;
+  display: flex;
+  overflow: hidden;
+  border-width: 0px;
+  transition: 0.3s ease all;
+  justify-content: center;
+}
+.flex-outer aside.active {
+  width: 250px;
+  border-width: 1px;
+}
+.flex-outer aside nav {
+  list-style: none;
+  min-width: 210px;
+
+  padding: 1rem 0rem;
+}
+.flex-outer aside nav a {
+  color: #3f51b5;
+  font-weight: 600;
+
+  text-decoration: none;
+  font-size: 18px;
+}
+.flex-outer aside nav > * + * {
+  margin-top: 5px;
+}
+.flex-outer > div:nth-child(2) {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.input-area > * + * {
+  margin-top: 5rem !important;
+}
+.MuiFormControl-root {
+  width: 250px;
+}
+.inputcontainer {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.pure-input {
+  display: flex;
+  align-items: center;
+}
+.pure-input button {
+  height: 100%;
+  margin-left: 2rem;
+}
+.table-area {
+  width: 90%;
+  margin: 3rem auto;
+}
+.card-warpper {
+  margin-top: 2rem;
+}
+.card-content {
+  display: flex;
+  align-items: center;
+}
+.text {
+  margin-left: 1rem !important;
+  margin-bottom: 0rem !important;
+}
+.output-input-wrapper,
+.pure-input {
+  width: 430px;
+}
+.pure-input {
+  display: flex;
+  align-items: center;
+}
+th:first-child,
+td:first-child {
+  text-align: left !important;
+}
+th,
+td {
+  text-align: center !important;
+}
+.pure-input > *:last-child {
+  flex: 1;
+}
+.output-input-wrapper > * {
+  width: 100%;
+  margin-left: 0px !important;
+  margin-bottom: 10px !important;
+}
+@media screen and (max-width: 690px) {
+  .flex-outer {
+    flex-direction: column !important;
+  }
+  .flex-outer aside {
+    position: fixed;
+    width: 250px;
+    top: 0;
+    left: -100%;
+  }
+  .flex-outer aside.active {
+    left: 0;
+    z-index: 9;
+  }
+  .close_icon {
+    display: flex;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .pure-input {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .pure-input button {
+    width: 250px;
+    margin-left: 0px;
+    margin-top: 2rem;
+  }
+  .output-input-wrapper,
+  .pure-input {
+    width: 250px;
+  }
+}
